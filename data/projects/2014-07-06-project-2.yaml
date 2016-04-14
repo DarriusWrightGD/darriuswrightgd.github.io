@@ -1,0 +1,6 @@
+modalID: 2
+title: Normal Mapping
+date: 2014-07-06
+img: normal-mapping.png
+category: Computer Graphics
+description: This demo loads the large ogre model, and then applies multiple textures to create a better quality model. [Checkout the repository!](//github.com/DarriusWrightGD/GraphicsProgramming)

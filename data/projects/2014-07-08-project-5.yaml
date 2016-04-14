@@ -1,0 +1,6 @@
+modalID: 5
+title: Framebuffer Cubemap
+date: 2014-07-08
+img: framebuffer-cubemap.png
+category: Computer Graphics
+description: In this demo you get a pretty cool effect of a skybox with the scene rendered on to the sides. [Checkout the repository!](//github.com/DarriusWrightGD/GraphicsProgramming)

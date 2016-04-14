@@ -1,0 +1,6 @@
+modalID: 6
+title: Fog
+date: 2014-07-10
+img: fog.png
+category: Computer Graphics
+description: For the fog effect it is a color blend based off of distance. So the further away the object get the more it blends into the grey. [Checkout the repository!](//github.com/DarriusWrightGD/GraphicsProgramming)

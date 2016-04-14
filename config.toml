@@ -1,0 +1,82 @@
+baseurl = "darriuswrightgd.github.io/"
+languageCode = "en-us"
+title = "Wright Development"
+description= "Join me as we journey into the world of Software Development!"
+theme = "hugo-creative-theme"
+
+
+	[params]
+	DateForm = "Mon, Jan 2, 2006"
+	Author="Darrius Wright"
+
+	# You can use Markdown syntax for urls [text](//url.to/source) for
+	# most longer texts.
+
+	# All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+	# for more icons. The icons are represented by their corresponding
+	# CSS class.
+
+	# All projects of the portfolio are defined in their own files.
+	# You can find example projects at 'exampleSite/data/projects'. Copy the 'projects'
+	# folder into the 'data' directory at the root of this Hugo site.
+	# For more informtion take a look at the README.
+
+	# To provide some metadata for search engines feel free to add a few
+    # information about you and your website.
+	name = "Darrius Wright"
+	description = "A platform "
+
+	# The path must be relative to the static folder
+	favicon = "favicon.ico"
+
+
+	#Blog section
+	[params.blog]
+		title= "Recent Posts"
+		buttonText="See all posts"
+		postLimit = 1
+
+	# Navigation
+	[params.navigation]
+		brand = "Wright Development"
+
+		[params.navigation.links]
+			about     = "About"
+			portfolio = "Portfolio"
+			contact   = "Contact"
+
+    # Hero section
+    [params.hero]
+      # To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
+      slogan     = "Development Done Wright"
+      subtitle   = "Welcome! While you're here checkout my portfolio through the button below, and my [blog](/post). If you have any feedback feel free to contact me"
+      buttonText = "Let's Go!"
+
+    # Portfolio modals
+    [params.portfolio.modal]
+      client = "Client"
+      date = "Date"
+      category = "Category"
+      buttonText = "Close"
+
+    [params.about]
+      headline    = "A Bit About Me"
+      description = "So I have been programming for over 4 years now, and over a year of that professionally. Over this time I have developed an extreme passion for programming therefore I would like to share it with everyone. Please leave feedback and I hope that my blog can be of help to you."
+      buttonText  = "Contact Me Below"
+
+    # Aside section
+  	[params.aside]
+  		headline = "Want to see more projects?"
+
+  		[params.aside.button]
+  			text = "See more!"
+  			link = "/portfolio"
+
+
+    # Contact section
+    [params.contact]
+      headline = "Feedback or Questions?"
+      description = "Thanks for dropping by! I always welcome feeback, feel free to email me at the address below."
+      email = "darriuswrightgd@gmail.com"
+			github = "https://github.com/DarriusWrightGD?tab=repositories"
+			linkedin= "https://www.linkedin.com/in/darrius-wright-4a723b95"

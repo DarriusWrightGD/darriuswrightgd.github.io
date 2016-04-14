@@ -1,0 +1,6 @@
+modalID: 1
+title: Edge Detection
+date: 2014-07-05
+img: edge-detection.png
+category: Computer Graphics
+description: This is small demo of edge detection, the techique uses difference in color to decide where the edge goes. [Checkout the repository!](//github.com/DarriusWrightGD/GraphicsProgramming)

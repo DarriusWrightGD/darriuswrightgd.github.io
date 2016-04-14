@@ -1,0 +1,6 @@
+modalID: 3
+title: Reflection
+date: 2014-07-07
+img: reflection.png
+category: Computer Graphics
+description: For this demo I decided to create a skybox in the background and then reflect the contents on to the cube. Turned out to be a pretty cool effect. [Checkout the repository!](//github.com/DarriusWrightGD/GraphicsProgramming)

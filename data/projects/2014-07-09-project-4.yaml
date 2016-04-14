@@ -1,0 +1,6 @@
+modalID: 4
+title: CartoonShading
+date: 2014-07-09
+img: cartoon-shading.png
+category: Computer Graphics
+description: In this demo we do a cartoon effect by making the change in color more drastic. For this rendering I used three layers to make it look pretty nice. [Checkout the repository!](//github.com/DarriusWrightGD/GraphicsProgramming) 
