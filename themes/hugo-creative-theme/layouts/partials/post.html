@@ -1,0 +1,13 @@
+{{ "<!-- ASIDE -->" | safeHTML }}
+<aside class="bg-dark">
+    <div class="container text-center">
+        <div class="call-to-action">
+            <h1>{{ .Title }}</h1>
+            <h2>{{.Description}}</h2>
+        </div>
+
+        <div class="content">
+          {{ .Content }}
+        </div>
+    </div>
+</aside>

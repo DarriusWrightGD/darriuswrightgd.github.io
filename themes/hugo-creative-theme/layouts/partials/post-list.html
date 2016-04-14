@@ -1,0 +1,15 @@
+{{ "<!-- POSTS -->" | safeHTML }}
+<aside class="bg-dark">
+  <div class="container text-center">
+    <div class="call-to-action">
+      <h1>{{.Site.Params.blog.title}}</h1>
+    </div>
+
+    <div class="content">
+      {{ range first 5 .Site.Pages }}
+        {{ .Render "summary" }}
+      {{ end }}
+    </div>
+
+  </div>
+</aside>
