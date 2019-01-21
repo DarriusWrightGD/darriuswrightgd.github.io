@@ -34,7 +34,11 @@ export default {
         .about-message {
             // display: block;
             flex: 0 0 50%;
-            padding: 0 10rem;
+            padding: 0 0;
+
+            @include respond(tablet) {
+                padding: 0 10rem;
+            }
         }
 
         .about-image {

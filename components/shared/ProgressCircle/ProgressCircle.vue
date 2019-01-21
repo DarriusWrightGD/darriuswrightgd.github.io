@@ -88,7 +88,7 @@ div span {
 }
 
 circle {
-    transition: stroke-dashoffset 0.35s;
+    transition: stroke-dashoffset 2s;
     transform: rotate(-90deg);
     transform-origin: 50% 50%;
 }

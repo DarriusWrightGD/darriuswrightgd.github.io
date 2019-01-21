@@ -1,7 +1,12 @@
 <template>
     <content-section title="Skills">
         <div class="skills-list">
-            <div class="skills-list-item" v-for="skill of skills" :key="skill.name" >
+            <div 
+                class="skills-list-item"
+                data-aos="fade-in"
+                data-aos-delay="300"
+                v-for="skill of skills" 
+                :key="skill.name" >
                 <skill :name="skill.name" :progress="skill.progress" />            
             </div>
         </div>
