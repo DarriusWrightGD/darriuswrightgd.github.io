@@ -63,7 +63,7 @@ export default {
         border: 5px solid blue;
 
         span {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             position: absolute;
             top: 50%;
             left: 50%;

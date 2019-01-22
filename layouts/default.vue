@@ -30,8 +30,6 @@ export default {
 @import "~assets/_mixins";
 
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 10px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -112,8 +110,17 @@ html {
   font-weight: lighter;
 }
 
+h1,h2,h3,h4,h5 {
+  font-family: 'Slabo 27px', serif;
+}
+
+span, p, li, div {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
 h1 {
   font-size: 4rem;
+  text-transform: uppercase;
 }
 
 h2 {

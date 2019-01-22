@@ -59,7 +59,7 @@ export default {
 
     padding: 2rem 4rem;
     width: 40rem;
-    height: 60rem;
+    min-height: 60rem;
     box-shadow: 0 .1rem .2rem rgba(0,0,0,.3);
     opacity: 1;
     position: relative;

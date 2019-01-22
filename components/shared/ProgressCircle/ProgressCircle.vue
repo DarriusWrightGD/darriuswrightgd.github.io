@@ -5,15 +5,16 @@
             :width="width">
             <circle
                 :stroke-width="stroke"
-                stroke="lightgray"
+                stroke="#e6e6e6"
                 :stroke-dasharray="strokeDasharray"
-                :stroke-dashoffset="strokeDashoffset"
+                :stroke-dashoffset="circumference * 2"
                 fill="transparent"
                 :r="normalizedRadius"
                 :cx="radius"
                 :cy="radius"
             />
             <circle
+                data-aos="progress-animation"
                 :stroke-width="stroke"
                 :stroke="color"
                 :stroke-dasharray="strokeDasharray"
@@ -33,7 +34,7 @@ export default {
     props: {
         stroke: {
             type: Number,
-            default: 2
+            default: 3
         },
         radius: {
             type: Number,
@@ -72,7 +73,7 @@ export default {
 </script>
 
 
-<style scoped>
+<style lang="scss" scoped>
 div {
     position: relative;
 }
@@ -86,6 +87,14 @@ div span {
     font-size: 2.2rem;
     font-weight: lighter;
 }
+
+// [data-aos="progress-animation"] {
+//     stroke-dashoffset: 0;
+
+//     &.aos-animate {
+//         transition: stroke-dashoffset 2s;
+//     }
+// }
 
 circle {
     transition: stroke-dashoffset 2s;

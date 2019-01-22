@@ -1,5 +1,7 @@
 <template>
     <content-section title="About Me">
+        <!-- <fa-icon :icon="['far', 'window-close']"/> -->
+
         <div class="about-content">
             <div class="about-image">
 

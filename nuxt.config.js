@@ -14,7 +14,9 @@ module.exports = {
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href:'https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700'},
+      { rel: 'stylesheet', href:'https://fonts.googleapis.com/css?family=Slabo+27px'}
     ]
   },
 
@@ -34,13 +36,15 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    { src: "~/plugins/aos" }
+    { src: "~/plugins/aos" },
+    { src: "~/plugins/font-awesome" }
   ],
 
   /*
   ** Nuxt.js modules
   */
   modules: [
+    'nuxt-fontawesome'
   ],
 
   /*
