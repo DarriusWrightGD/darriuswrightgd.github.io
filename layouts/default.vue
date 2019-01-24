@@ -39,22 +39,23 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   background-color: $background-color;
+  overflow-x: hidden;
 
 
   @include respond(mobile) {
-    font-size: 30%;
-  }
-
-  @include respond(mobile-land) {
-    font-size: 35%;
-  }
-
-  @include respond(tablet) {
     font-size: 40%;
   }
 
-  @include respond(tab-port) {
+  @include respond(mobile-land) {
+    font-size: 45%;
+  }
+
+  @include respond(tablet) {
     font-size: 50%;
+  }
+
+  @include respond(tab-port) {
+    font-size: 55%;
   }
 
   @include respond(tab-land) {

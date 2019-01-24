@@ -63,16 +63,17 @@ export default {
         border: 5px solid $primary-color;
 
         span {
-            font-size: 2rem;
+            font-size: 1.7rem;
+            
             @include respond(tab-port) {
-                font-size: 1.6rem;
+                font-size: 1.5rem;
             }
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             // color: white;
-            font-weight: lighter;
+            font-weight: bold;
             width: 100%;
         }
     }
