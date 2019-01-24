@@ -5,10 +5,6 @@
                 <h2>{{company}}</h2>
                 <h3 v-for="jobTitle in jobTitles">{{jobTitle}}</h3>
             </div>
-
-            <!-- <span>
-                <strong>{{company}}</strong> - <i>{{jobTitle}}</i> ( <i>{{from}} - {{to}}</i> )
-            </span> -->
             <ul>
                 <li v-for="accomplishment in accomplishments" :key="accomplishment">
                     <p>{{accomplishment}}</p>
@@ -63,6 +59,7 @@ export default {
     box-shadow: 0 .1rem .2rem rgba(0,0,0,.3);
     opacity: 1;
     position: relative;
+    background: white;
 
     .experience-title, .technologies-title {
         width: 100%;

@@ -4,8 +4,8 @@
             :height="height"
             :width="width">
             <circle
+                class="filling"
                 :stroke-width="stroke"
-                stroke="#e6e6e6"
                 :stroke-dasharray="strokeDasharray"
                 :stroke-dashoffset="circumference * 2"
                 fill="transparent"
@@ -14,9 +14,9 @@
                 :cy="radius"
             />
             <circle
+                class="main"
                 data-aos="progress-animation"
                 :stroke-width="stroke"
-                :stroke="color"
                 :stroke-dasharray="strokeDasharray"
                 :stroke-dashoffset="strokeDashoffset"
                 fill="transparent"
@@ -44,10 +44,6 @@ export default {
             type: Number,
             default: 0
         },
-        color: {
-            type: String,
-            default: 'blue'
-        }
     },
     data() {
         const normalizedRadius = this.radius - this.stroke * 2;
@@ -74,6 +70,8 @@ export default {
 
 
 <style lang="scss" scoped>
+@import '~/assets/main.scss';
+
 div {
     position: relative;
 }
@@ -100,5 +98,13 @@ circle {
     transition: stroke-dashoffset 2s;
     transform: rotate(-90deg);
     transform-origin: 50% 50%;
+}
+
+.main {
+    stroke: $primary-color;
+}
+
+.filling {
+    stroke: $secondary-color;
 }
 </style>

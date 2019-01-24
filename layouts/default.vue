@@ -27,9 +27,10 @@ export default {
 
 
 <style lang="scss">
-@import "~assets/_mixins";
+@import "~assets/main";
 
 html {
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 10px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -37,6 +38,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  background-color: $background-color;
 
 
   @include respond(mobile) {
@@ -70,6 +72,10 @@ html {
 *:after {
   box-sizing: border-box;
   margin: 0;
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: 'Slabo 27px', serif;
 }
 
 .bg-image {
@@ -110,13 +116,7 @@ html {
   font-weight: lighter;
 }
 
-h1,h2,h3,h4,h5 {
-  font-family: 'Slabo 27px', serif;
-}
 
-span, p, li, div {
-  font-family: 'Roboto Condensed', sans-serif;
-}
 
 h1 {
   font-size: 4rem;

@@ -28,7 +28,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~/assets/_mixins.scss';
+@import '~/assets/main.scss';
 
 .experience-item {
     display: flex;
@@ -46,7 +46,7 @@ export default {
             top: 12rem;
             width: 1px;
             height: calc(100% - 6rem);
-            background-color: #e6e6e6;
+            background-color: $secondary-color-dark;
         }
     }
 }
@@ -60,10 +60,13 @@ export default {
         border-radius: 50%;
         display: inline-block;
         position: relative;
-        border: 5px solid blue;
+        border: 5px solid $primary-color;
 
         span {
-            font-size: 1.4rem;
+            font-size: 2rem;
+            @include respond(tab-port) {
+                font-size: 1.6rem;
+            }
             position: absolute;
             top: 50%;
             left: 50%;
@@ -83,7 +86,7 @@ export default {
         flex-grow: 1;
         align-self: flex-start;
         padding-top: 6rem;
-        border-bottom: 1px solid blue;
+        border-bottom: 1px solid $primary-color;
     }
 }
 
