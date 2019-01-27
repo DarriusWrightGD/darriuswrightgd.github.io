@@ -3,11 +3,15 @@
     <div class="bg-image"></div>
     <div class="main-layout">
       <overlay/>
+      <main-header class="main-header"/>
       <div class="layout-center">
         <div class="layout-title">
           <h1>Darrius Wright</h1>
           <h2>Software Engineer</h2>
         </div>
+        <a class="btn main-btn" v-scroll-to="'#about-me'">
+          See More
+        </a>
       </div>
     </div>
     <nuxt/>
@@ -15,10 +19,12 @@
   </div>
 </template>
 <script>
+import MainHeader from '~/components/shared/Header/Header'
 import Overlay from '~/components/shared/Overlay/Overlay.vue'
 import FooterSection from '~/components/FooterSection/FooterSection'
 export default {
   components: {
+    MainHeader,
     Overlay,
     FooterSection
   }
@@ -63,7 +69,7 @@ html {
   }
 
   @include respond(big-desktop) {
-    font-size: 85%;        
+    font-size: 75%;        
   }
 
 }
@@ -89,13 +95,22 @@ h1,h2,h3,h4,h5 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: -2;
+  z-index: -3;
 }
 
 .main-layout {
   position: relative;
   height: 100vh;
   margin-bottom: 2rem;
+}
+
+.btn.main-btn {
+  margin: 5rem;
+  font-size: 1.5rem;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+
 }
 
 .layout-center {
@@ -107,14 +122,14 @@ h1,h2,h3,h4,h5 {
 }
 
 .layout-title {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.8);
   text-align: center;
   padding: 1.5rem 3rem;
   color: white;
-}
 
-.layout-title h2 {
-  font-weight: lighter;
+  h2 {
+    font-weight: lighter;
+  }
 }
 
 

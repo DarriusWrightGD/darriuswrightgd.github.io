@@ -105,6 +105,6 @@ circle {
 }
 
 .filling {
-    stroke: $secondary-color;
+    stroke: darken($primary-color, 30%);
 }
 </style>

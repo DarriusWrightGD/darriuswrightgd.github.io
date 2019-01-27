@@ -1,6 +1,6 @@
 <template>
-    <footer>
-        <h1 class="footer-title">Contact Me</h1>
+    <footer id="contact">
+        <h1 class="footer-title">Contact</h1>
         <div class="contact-section">
             <!-- <div class="contact-message">
                 <h2>Thanks for stopping by!</h2>
@@ -10,7 +10,7 @@
                 <form action="https://formspree.io/darriuswrightgd@gmail.com" method="POST" >
                     <input type="text" name="name" placeholder="Name" />
                     <input type="text" name="email" placeholder="Email" />
-                    <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
+                    <textarea name="message" cols="30" rows="10" placeholder="Leave a message and I'll get back to you as soon as I can!"></textarea>
                     <input type="submit" class="btn footer-btn">
                 </form>
             </div>

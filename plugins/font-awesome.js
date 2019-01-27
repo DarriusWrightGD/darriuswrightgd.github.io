@@ -1,18 +1,21 @@
 import Vue from "vue";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
-import {
-  faWindowClose,
-  faWindowMaximize,
-  faWindowMinimize
-} from "@fortawesome/free-regular-svg-icons";
 
 import {
-  faPlus
+  faPlus,
+  faCode,
+  faCloud,
+  faChalkboardTeacher,
+  faBook,
+  faChargingStation,
+  faBars
 } from "@fortawesome/free-solid-svg-icons"
 
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-library.add(faWindowClose, faWindowMaximize, faWindowMinimize, faPlus);
+library.add(
+  faPlus, faCode, faCloud, faChargingStation, faBook,
+  faChalkboardTeacher, faBars);
 
 Vue.component("fa-icon", FontAwesomeIcon);

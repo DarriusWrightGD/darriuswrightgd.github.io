@@ -21,7 +21,8 @@
     "cross-env": "^5.2.0",
     "npm": "^6.6.0",
     "nuxt": "^2.0.0",
-    "nuxt-fontawesome": "^0.4.0"
+    "nuxt-fontawesome": "^0.4.0",
+    "vue-scrollto": "^2.13.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

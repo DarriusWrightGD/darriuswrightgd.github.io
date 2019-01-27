@@ -1,11 +1,13 @@
 <template>
-    <div class="experience">
-        <div>
+    <card class="experience">
             <div class="experience-title">
                 <h2>{{company}}</h2>
-                <h3 v-for="jobTitle in jobTitles">{{jobTitle}}</h3>
+                <h3 v-for="jobTitle in jobTitles" :key="jobTitle">{{jobTitle}}</h3>
             </div>
-            <ul>
+            <div class="experience-time">
+                {{from}} - {{to}}
+            </div>
+            <ul class="accomplishments">
                 <li v-for="accomplishment in accomplishments" :key="accomplishment">
                     <p>{{accomplishment}}</p>
                 </li>
@@ -16,10 +18,10 @@
                     {{tech}}<span v-if="index < technologiesUsed.length-1">, </span>
                 </span>
             </div>
-        </div>
-    </div>
+    </card>
 </template>
 <script>
+import Card from '~/components/shared/Card/Card'
 export default {
     props: {
         jobTitles: {
@@ -45,30 +47,38 @@ export default {
         technologiesUsed: {
 
         }
+    },
+    components: {
+        Card
     }
 }
 </script>
 
 <style scoped lang="scss">
-.experience {
-    text-align: left;
+@import '~/assets/main.scss';
 
-    padding: 2rem 4rem;
+.experience {
+    // text-align: left;
     width: 40rem;
     min-height: 60rem;
-    box-shadow: 0 .1rem .2rem rgba(0,0,0,.3);
-    opacity: 1;
-    position: relative;
-    background: white;
+    display: flex;
+    flex-direction: column;
 
     .experience-title, .technologies-title {
-        width: 100%;
-        text-align: center;
-        padding: 2rem 0;
+        padding: 2rem 0 0;
+        @include respond(tablet) {
+            padding: 2rem 0;
+        }
     }
 
-    .technologies {
-        text-align: center;
+    .experience-time {
+        padding: 1rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+
+        @include respond(tablet) {
+            display: none;
+        }
     }
 
     h2 {
@@ -77,7 +87,16 @@ export default {
 
     h3 {
         font-size: 2.2rem;
-        text-align: center;
+    }
+
+    ul {
+        text-align: left;
+    }
+
+    .technologies {
+        margin-top: auto;
+        margin-bottom: 2rem;
+        padding: 0 2rem;
     }
 }
 </style>

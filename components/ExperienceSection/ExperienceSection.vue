@@ -1,5 +1,5 @@
 <template>
-    <content-section title="Experience">
+    <content-section id="experience" title="Experience">
         <div class="experience-group">
             <div v-for="exp in experience" class="experience-item" data-aos="fade-in" data-aos-delay="200" :key="exp.company">
                     <div class="experience-time">
