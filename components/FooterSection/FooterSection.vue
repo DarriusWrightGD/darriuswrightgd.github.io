@@ -20,7 +20,7 @@
 </template>
 
 <style scoped lang="scss">
-    @import '~/assets/_styles.scss';
+    @import '~/assets/main.scss';
 
     footer {
         background: black;
@@ -52,7 +52,10 @@
                 // width: 100%;
                 input, textarea {
                     margin: .5rem auto;
-                    width: 40rem;
+                    width: 20rem;
+                    @include respond(mobile-land) {
+                        width: 40rem;
+                    }
                 }
                 .footer-btn {
                     margin-left: auto;

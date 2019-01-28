@@ -1,32 +1,45 @@
 <template>
     <div class="nav">
         <div>
-            <!-- <fa-icon class="nav-icon" @click="navClosed=!navClosed" :icon="['fas', 'bars']"/> -->
+            <fa-icon class="nav-icon" @click="navClosed=!navClosed" :icon="['fas', 'bars']"/>
         </div>
-        <ul class="nav-items" :class="{'mobile-hide': navClosed}">
-            <li class="nav-item">
-                <a href="#" v-scroll-to="'#about-me'">About</a>   
-            </li>
-            <li class="nav-item">
-                <a href="#" v-scroll-to="'#experience'">Experience</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" v-scroll-to="'#skills'">Skills</a>
-            </li>
-            <!-- <li class="nav-item">
-                <a href="#" v-scroll-to="'#education'">Education</a>
-            </li> -->
-            <li class="nav-item">
-                <a href="#" v-scroll-to="'#contact'">Contact</a>
-            </li>
-        </ul>
+        <!--  -->
+        <div class="nav-bar" :class="{'mobile-hide': navClosed}" >
+            <ul class="nav-items" >
+                <li class="nav-item" v-for="navItem in navItems" :key="navItem.name">
+                    <a href="#" @click="navClosed=!navClosed" v-scroll-to="navItem.scrollTo">{{navItem.name}}</a>   
+                </li>
+            </ul>
+        </div>
     </div>
 </template>
 <script>
 export default {
     data() {
         return {
-            navClosed: false
+            navClosed: true,
+            navItems: [
+                {
+                    name: "About",
+                    scrollTo: "#about-me"
+                },
+                {
+                    name: "Experience",
+                    scrollTo: "#experience"
+                },
+                {
+                    name: "Skills",
+                    scrollTo: "#skills"
+                },
+                {
+                    name: "Education",
+                    scrollTo: "#education"
+                },
+                {
+                    name: "Contact",
+                    scrollTo: "#contact"
+                }
+            ]
         }
     }
 }
@@ -38,29 +51,47 @@ export default {
         display: flex;
         flex-direction: column;
         .nav-icon {
-            // position: fixed;
             color: white;
             font-size: 4rem;
-            // height: 6rem;
             display: block;
-            // position: absolute;
-            // right: 0;
-            // top: 0;
-            // margin: 2rem;
+            align-self: flex-end;
+            margin-left: auto;
+
+            @include respond(tablet) {
+                display: none;
+            }
+        }
+
+        .nav-bar {
+            z-index: 15;
         }
 
         .nav-items {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
+            margin-top: 3rem;
+            margin-left: auto;
+
+            // flex-direction: row;
             list-style: none;
             color: white;
             font-size: 2rem;
             font-weight: bold;
-            // margin-top: 6rem;
+
+            @include respond(tablet) {
+                flex-direction: row;
+                margin-top: 0;
+            }
+            
 
             .nav-item {
                 position:relative;
-                padding: 0 1rem;
+                padding: 1rem 2rem;
+
+                @include respond(tablet) {
+                    padding: 0 2rem;
+                }
+
                 a {
                     cursor: pointer;
 

@@ -7,7 +7,7 @@
       <div class="layout-center">
         <div class="layout-title">
           <h1>Darrius Wright</h1>
-          <h2>Software Engineer</h2>
+          <h2 class="job-title">Software Devloper</h2>
         </div>
         <a class="btn main-btn" v-scroll-to="'#about-me'">
           See More
@@ -22,11 +22,29 @@
 import MainHeader from '~/components/shared/Header/Header'
 import Overlay from '~/components/shared/Overlay/Overlay.vue'
 import FooterSection from '~/components/FooterSection/FooterSection'
+import Typed from 'typed.js'
+
 export default {
   components: {
     MainHeader,
     Overlay,
     FooterSection
+  },
+  mounted() {
+    const typed = new Typed('.job-title', {
+      strings: [
+        "",
+        "Software Dev^200loper^800", 
+        "Software Dev^200eolper^800", 
+        "Software Dev^200opler^800", 
+        "I write code"
+      ],
+      // startDelay: 2000,
+      smartBackspace: true,
+      typeSpeed: 30,
+      backSpeed: 30,
+      showCursor: false
+    })
   }
 }
 </script>
@@ -110,6 +128,10 @@ h1,h2,h3,h4,h5 {
   background: transparent;
   color: white;
   border: 2px solid white;
+  // position: absolute;
+  // bottom: 5%;
+  width: 15rem;
+  // transform: translate(-35%, -50%)
 
 }
 
@@ -119,9 +141,16 @@ h1,h2,h3,h4,h5 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 .layout-title {
+  // position: absolute;
+  // top: 50%;
+  // transform: translate(0, -50%);
   background: rgba(0, 0, 0, 0.8);
   text-align: center;
   padding: 1.5rem 3rem;
@@ -129,6 +158,8 @@ h1,h2,h3,h4,h5 {
 
   h2 {
     font-weight: lighter;
+    font-size: 2.5rem;
+    min-height: 2.5rem;
   }
 }
 
@@ -141,6 +172,7 @@ h1 {
 
 h2 {
   font-size: 2.2rem;
+  
 }
 
 section {

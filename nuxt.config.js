@@ -16,7 +16,7 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Slabo+27px' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Slabo+27px' }
     ]
   },
 
@@ -29,7 +29,9 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    '@/assets/main.scss'
+    '@/assets/main.scss',
+    '@/node_modules/hover.css/css/hover-min.css',
+    // '@/node_modules/mini.css/dist/mini-default.min.css'
   ],
 
   /*
@@ -45,7 +47,6 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
-    'nuxt-fontawesome'
   ],
 
   /*

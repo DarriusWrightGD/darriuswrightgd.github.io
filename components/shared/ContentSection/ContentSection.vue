@@ -17,9 +17,15 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@import '@/assets/main.scss';
+
 .section-content {
-    padding: 3rem;
+    padding: 1rem;
+
+    @include respond(tablet) {
+        padding: 3rem;
+    }
 }
 </style>
 

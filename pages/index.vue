@@ -3,7 +3,7 @@
     <about-section data-aos="slide-up"/>
     <experience-section data-aos="slide-right"/>
     <skills-section data-aos="slide-left"/>
-    <!-- <education-section data-aos="slide-up"/> -->
+    <education-section data-aos="slide-up"/>
   </div>
 </template>
 

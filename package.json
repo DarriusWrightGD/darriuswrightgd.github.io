@@ -19,9 +19,10 @@
     "@fortawesome/vue-fontawesome": "^0.1.5",
     "aos": "^2.3.4",
     "cross-env": "^5.2.0",
+    "hover.css": "^2.3.2",
     "npm": "^6.6.0",
     "nuxt": "^2.0.0",
-    "nuxt-fontawesome": "^0.4.0",
+    "typed.js": "^2.0.9",
     "vue-scrollto": "^2.13.0"
   },
   "devDependencies": {

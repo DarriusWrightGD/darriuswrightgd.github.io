@@ -17,15 +17,13 @@ export default {
 
 <style scoped>
     .header {
-        /* position: absolute;
-        top: 0; */
-        /* height: 7rem; */
+        position: relative;
         width: 100%;
-        background: rgba(0,0,0,.8);
+        background: rgba(0,0,0,.9);
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 2.5rem 2.5rem 1.5rem;
-        z-index: 0;
+        z-index: 100;
     }
 </style>
