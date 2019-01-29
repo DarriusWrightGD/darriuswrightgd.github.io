@@ -1,6 +1,6 @@
 # Header
 
-- Hamburger menu
+- Animate Hamburger menu
 
 # Skills
 

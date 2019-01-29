@@ -31,6 +31,7 @@ module.exports = {
   css: [
     '@/assets/main.scss',
     '@/node_modules/hover.css/css/hover-min.css',
+    '@/node_modules/animate.css/animate.min.css',
     // '@/node_modules/mini.css/dist/mini-default.min.css'
   ],
 

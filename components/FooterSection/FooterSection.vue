@@ -2,11 +2,7 @@
     <footer id="contact">
         <h1 class="footer-title">Contact</h1>
         <div class="contact-section">
-            <!-- <div class="contact-message">
-                <h2>Thanks for stopping by!</h2>
-            </div> -->
             <div class="contact-form">
-                <!-- <h2>Send me a message!</h2> -->
                 <form action="https://formspree.io/darriuswrightgd@gmail.com" method="POST" >
                     <input type="text" name="name" placeholder="Name" />
                     <input type="text" name="email" placeholder="Email" />
@@ -51,8 +47,11 @@
                 flex-direction: column;
                 // width: 100%;
                 input, textarea {
+                    font-family: 'Roboto Condensed' sans-serif;
                     margin: .5rem auto;
                     width: 20rem;
+                    resize: none;
+                    
                     @include respond(mobile-land) {
                         width: 40rem;
                     }

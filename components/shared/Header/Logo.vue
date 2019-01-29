@@ -1,25 +1,17 @@
 <template>
     <div class="logo">
-        <!-- <span class="software">
-            <span v-for="(letter, index) in 'Software'" :key="letter">
-                <span :class="'char'+index">{{letter}}</span>
-            </span>
-        </span>
-        <span class="by">by</span>
-        <h1 class="logo-name">
-            Wright
-        </h1> -->
-        <svg viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg">
-            <text x="-100" y="90" class="software">S</text> 
-            <text x="-65" y="80" class="software">o</text> 
-            <text x="-30" y="65" class="software">f</text> 
-            <text x="0" y="50" class="software">t</text> 
-            <text x="28" y="50" class="software">w</text> 
-            <text x="65" y="65" class="software">a</text>
-            <text x="95" y="80" class="software">r</text> 
-            <text x="125" y="90" class="software">e</text> 
-            <text x="0" y="90" class="pre-text">by</text> 
-            <text x="-100" y="130" class="name">wright</text>        </svg>
+        <svg viewBox="0 0 180 260" xmlns="http://www.w3.org/2000/svg">
+            <text x="-100" y="150" class="software">S</text> 
+            <text x="-50" y="120" class="software">o</text> 
+            <text x="-5" y="100" class="software">f</text> 
+            <text x="35" y="80" class="software">t</text> 
+            <text x="85" y="80" class="software">w</text> 
+            <text x="150" y="100" class="software">a</text>
+            <text x="200" y="120" class="software">r</text> 
+            <text x="250" y="150" class="software">e</text> 
+            <text x="40" y="150" class="pre-text">by</text> 
+            <text x="-100" y="220" class="name">wright</text>
+        </svg>
     </div>
 
 </template>
@@ -45,13 +37,13 @@
         }
 
         .pre-text {
-            font-size: 40px;
+            font-size: 80px;
             letter-spacing: 10px;
         }
         .name {
             font-family: 'Slabo 27px';
             letter-spacing: 20px;
-            font-size: 40px;
+            font-size: 80px;
         }
 
         > span {
@@ -64,7 +56,7 @@
         }
 
         .software {
-            font-size: 40px;
+            font-size: 80px;
 
             // $charCount: 8;
             // $startY: 160;

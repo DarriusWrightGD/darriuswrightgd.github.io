@@ -29,7 +29,6 @@ export default {
 
 <style lang="scss" scoped>
 @import '~/assets/main.scss';
-
 .experience-item {
     display: flex;
     justify-content: space-around;

@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <about-section data-aos="slide-up"/>
-    <experience-section data-aos="slide-right"/>
-    <skills-section data-aos="slide-left"/>
+    <experience-section class="experience" data-aos="slide-right"/>
+    <skills-section class="skills" data-aos="slide-left"/>
     <education-section data-aos="slide-up"/>
   </div>
 </template>
@@ -22,13 +22,19 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import '~/assets/main.scss';
+
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+
+  @include respond(big-desktop) {
+    padding: 0 10rem;
+  }
 }
 
 .title {
@@ -51,5 +57,25 @@ export default {
 
 .links {
   padding-top: 15px;
+}
+
+.experience {
+  @include respond(tablet) {
+    padding: 0 10rem;
+  }
+
+  @include respond(tab-port) {
+    padding: 0 15rem;
+  }
+
+  @include respond(big-desktop) {
+    padding: 0 10rem;
+  }
+}
+
+.skills {
+  @include respond(tab-port) {
+    padding: 0 10rem;
+  }
 }
 </style>
