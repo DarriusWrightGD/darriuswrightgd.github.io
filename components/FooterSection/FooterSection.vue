@@ -10,10 +10,22 @@
                     <input type="submit" class="btn footer-btn">
                 </form>
             </div>
+            <div class="social">
+                <a href="https://github.com/DarriusWrightGD">
+                    <fa-icon class="nav-icon" :icon="['fab', 'github-square']"/>
+                </a>
+                <a href="https://www.linkedin.com/in/darrius-wright/">
+                    <fa-icon class="nav-icon" :icon="['fab', 'linkedin']"/>
+                </a>
+            </div>
+            <div class="copy">
+                © {{ new Date().getFullYear() }} <span>Darrius Wright</span>. All rights reserved.
+            </div>
         </div>
         
     </footer>
 </template>
+
 
 <style scoped lang="scss">
     @import '~/assets/main.scss';
@@ -64,6 +76,29 @@
 
         .contact-message, .contact-form {
             width: 100%
+        }
+
+        .social {
+            padding-top: 5rem;
+            
+            a {
+                color: white;
+                font-size: 5rem;
+                margin: 1rem;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+
+        .copy {
+            padding-top: 2rem;
+            font-size: 1.8rem;
+            span {
+                font-size: 2rem;
+                font-weight: bold;
+            }
         }
     }
 </style>
