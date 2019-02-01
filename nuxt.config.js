@@ -41,7 +41,8 @@ module.exports = {
   plugins: [
     { src: "~/plugins/aos" },
     { src: "~/plugins/font-awesome" },
-    { src: "~/plugins/scrollto" }
+    { src: "~/plugins/scrollto" },
+    { src: "~/plugins/waypoint" }
   ],
 
   /*

@@ -69,6 +69,7 @@
                     }
                 }
                 .footer-btn {
+                    font-size: 2rem;
                     margin-left: auto;
                 }
             }
