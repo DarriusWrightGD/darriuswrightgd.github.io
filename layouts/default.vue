@@ -109,7 +109,7 @@ h1,h2,h3,h4,h5 {
   height: 100vh;
   filter: blur(4px);
   -webkit-filter: blur(4px);
-  background-image: url('/img/background1.jpg');
+  background-image: url('/img/background-min.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

@@ -42,7 +42,7 @@ module.exports = {
     { src: "~/plugins/aos" },
     { src: "~/plugins/font-awesome" },
     { src: "~/plugins/scrollto" },
-    { src: "~/plugins/waypoint" }
+    // { src: "~/plugins/waypoint" }
   ],
 
   /*

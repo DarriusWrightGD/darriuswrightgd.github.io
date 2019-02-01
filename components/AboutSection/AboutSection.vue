@@ -53,7 +53,7 @@ export default {
             border-radius: 50%;
             border: 5px solid black;
             margin-bottom: 2rem;
-            background-image: url('/img/about-me.jpg');
+            background-image: url('/img/about-me-min.jpg');
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
